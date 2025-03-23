@@ -16,7 +16,7 @@ const { Sequelize, DataTypes } = require("sequelize");
 //   },
 // });
 
-const sequelize = new Sequelize(process.env.DATABASE_URL || 'postgres://postgres.vjnfrasmeyfxooevwuxh:AWNc0u3zDhiQnTki@aws-0-us-east-1.pooler.supabase.com:6543/postgres?sslmode=require&supa=base-pooler.x', {
+const sequelize = new Sequelize(process.env.DATABASE_URL || 'postgres://postgres.vjnfrasmeyfxooevwuxh:AWNc0u3zDhiQnTki@aws-0-us-east-1.pooler.supabase.com:6543/postgres?supa=base-pooler.x', {
   dialect: 'postgres',
   dialectModule: require('pg'),
   benchmark: true,

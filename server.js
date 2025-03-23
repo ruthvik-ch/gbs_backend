@@ -10,6 +10,9 @@ var corsOptions = {
 
 };
 
+console.log("inside server.js file")
+console.log(process.env.DATABASE_URL)
+
 app.get('/', (req, res) => {
   res.send('Hello, World!');
 });

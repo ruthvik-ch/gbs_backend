@@ -20,6 +20,12 @@ const sequelize = new Sequelize(process.env.DATABASE_URL || 'postgres://postgres
   dialect: 'postgres',
   dialectModule: require('pg'),
   benchmark: true,
+  dialect: 'postgres',
+  dialectOptions: {
+    ssl: {
+      rejectUnauthorized: false,  // This disables certificate validation
+    },
+  },
   pool: {
     max: 10,
     min: 0,

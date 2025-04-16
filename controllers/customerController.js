@@ -18,16 +18,8 @@ const addCustomer = asyncHandler(async (req, res) => {
   if (
     CustomerName === undefined || 
     CustomerName.trim() === "" ||
-    Aadhar === undefined ||
-    Aadhar.trim() === "" ||
-    Pan_Card === undefined ||
-    Pan_Card.trim() === "" ||
-    Address === undefined ||
-    Address.trim() === "" ||
     Phone === undefined ||
-    Phone.trim() === "" ||
-    AlternatePhone === undefined ||
-    AlternatePhone.trim() === ""
+    Phone.trim() === "" 
   ) {
     res.status(400);
     throw new Error("All fields are mandatory!");
